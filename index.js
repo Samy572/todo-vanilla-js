@@ -33,3 +33,8 @@ input.addEventListener('change', e =>{
 
 
 
+parent.addEventListener('click', (event) => {
+  if (event.target.classList.contains('btnDelete')) {
+    event.target.parentNode.remove();
+  }
+});
