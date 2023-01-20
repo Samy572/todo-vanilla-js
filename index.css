@@ -10,12 +10,12 @@ body{
   padding: 0px 15px;
   height:100vh;
   font-family:'Lato', sans-serif ;
-  background: #075985;
+  background: #141414;
 }
 h1{
   padding-top: 15px;
   text-align: center;
-  color:white;
+  color: #ffff;
   
 }
 
@@ -40,14 +40,17 @@ form{
 button{
   margin-top: 10px;
   padding:5px;
-  border-radius: 10px;
+  border: solid 1px #f2f1f1;
+  opacity: 0.7;
   cursor: pointer;
-  background-color: black;
+  background: #141414;
   color: white;
   transition: all 0.3s; 
 }
 button:hover{
-  transform: scale(1.1);
+  color : #ffff;
+  border: solid 1px #ffff;
+  opacity: 1;
 }
 #parent{
   width: 100%;
@@ -57,14 +60,15 @@ button:hover{
   transition: 0.5s;
 }
 .todo{
+  position:relative;
   color:white;
   font-weight: 600;
   display: flex;
   margin-top: 30px;
   height:80px;
-  min-width:320px;
+  min-width:300px;
   margin-top: 40px; 
-  border: solid 1px #bcb4bc;
+  border: solid 1px #d1e56c;
   animation : appear 0.3s ease;
   cursor: pointer;
 }
@@ -72,9 +76,23 @@ button:hover{
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-.visible{
-  display: block;
+.btnDelete{
+  position:absolute;
+  top: 0px;
+  right:10px;
+  font-size: 16px;
+  border: none;
+  padding: 0;
+  transform: rotate(45deg);
+  
 }
+
+.btnDelete:hover{
+  border:none;
+  color:#e50914; 
+}
+
+
 p{
   padding: 10px;
 }
