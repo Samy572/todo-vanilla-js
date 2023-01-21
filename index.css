@@ -13,7 +13,7 @@ body{
   background: #141414;
 }
 h1{
-  padding-top: 15px;
+  padding: 15px 0;
   text-align: center;
   color: #ffff;
   
@@ -28,8 +28,8 @@ h1{
   
 }
 textarea{
-  width:300px;
-  height:100px;
+  width:500px;
+  height:120px;
   padding: 10px;
   outline: none;
 }
@@ -39,7 +39,7 @@ form{
 }
 button{
   margin-top: 10px;
-  padding:5px;
+  padding:7px;
   border: solid 1px #f2f1f1;
   opacity: 0.7;
   cursor: pointer;
@@ -65,8 +65,8 @@ button:hover{
   font-weight: 600;
   display: flex;
   margin-top: 30px;
-  height:80px;
-  min-width:300px;
+  height:100px;
+  width:500px;
   margin-top: 40px; 
   border: solid 1px #d1e56c;
   animation : appear 0.3s ease;
@@ -80,11 +80,14 @@ button:hover{
   position:absolute;
   top: 0px;
   right:10px;
-  font-size: 16px;
+  font-size: 1.5em;
   border: none;
   padding: 0;
   transform: rotate(45deg);
   
+}
+.disapear{
+  animation: disapear 3s ease;
 }
 
 .btnDelete:hover{
@@ -105,5 +108,19 @@ p{
   to{
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width:700px) {
+  textarea{
+    width: 300px;
+    height:100px;
+  }
+  #newTask{
+    padding: 5px;
+  }
+  .todo{
+    height:80px;
+    width:300px;
   }
 }

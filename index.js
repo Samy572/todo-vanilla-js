@@ -2,7 +2,7 @@ const input = document.getElementById('input');
 const button = document.getElementById('newTask');
 const parent = document.getElementById('parent');
 let btnDelete = document.querySelector('.btnDelete');
-const newDiv = document.querySelectorAll('.todo');
+let newDiv = document.querySelectorAll('.todo');
 let arr = [];
 
 
@@ -33,8 +33,8 @@ input.addEventListener('change', e =>{
 
 
 
-parent.addEventListener('click', (event) => {
-  if (event.target.classList.contains('btnDelete')) {
-    event.target.parentNode.remove();
+parent.addEventListener('click', (e) => {
+  if (e.target.classList.contains('btnDelete')) {
+    e.target.parentNode.remove();
   }
 });
